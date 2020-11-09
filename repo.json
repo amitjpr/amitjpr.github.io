@@ -1,0 +1,46 @@
+{
+    "data": [
+        {
+            "name": "Hospital Managment",
+            "lang": "HTML CSS BOOTSTRAP JAVASCRIPT JAVA MYSQL",
+            "url":  "",
+            "desc": ""
+        },
+        {
+            "name": "Employe Managment",
+            "lang": "HTML CSS BOOTSTRAP JAVASCRIPT REST API",
+            "url": "",
+            "desc": ""
+        },
+        {
+            "name": "Payroll System",
+            "lang": "HTML CSS BOOTSTRAP JAVASCRIPT JAVA MYSQL",
+            "url": "",
+            "desc": ""
+        },
+        {
+            "name": "Loan Managment",
+            "lang": "HTML CSS BOOTSTRAP JAVASCRIPT JAVA MYSQL",
+            "url": "",
+            "desc": ""
+        },
+        {
+            "name": "Quiz App",
+            "lang": "HTML CSS BOOTSTRAP JAVASCRIPT JAVA MYSQL",
+            "url":"",
+            "desc": ""
+        },
+        {
+            "name": "Study Salesforce",
+            "lang": "Salesforce ,Apex",
+            "url": "",
+            "desc": "Free salesforce training for students to learn new Things"
+        },
+        {
+            "name": "Covid-19 Tracker",
+            "lang": "HTML CSS BOOTSTRAP JAVASCRIPT REST API",
+            "url":"https://amitjpr.github.io/covid19/",
+            "desc":"n this pandemic days, we can see the live covid updates of different countries like the Confirmed, Active, Death and Recoverd plotted in a graph in a very efficient manner."
+        }
+    ]
+}

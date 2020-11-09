@@ -1,0 +1,384 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #eee;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    margin: 20px;
+    background-color: rgb(248, 255, 253);
+    color: #000;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 20px;
+    width: -webkit-fill-available;
+}
+.nf{
+    font-family: 'Righteous', cursive;
+}
+body.dark{
+    background-color: black;
+    color: #eee;
+    transition: 0.5s;
+}
+body.dark .container{
+    background-color: #1d1d1d;
+    color: #eee;
+}
+.navbar{
+    display: flex;
+    background-color: #eee;
+    font-family: 'Open Sans', sans-serif;
+}
+body.dark .navbar{
+    background-color: #000;
+}
+.navbar ul{
+    list-style: none;
+}
+.navbar ul li{
+    display: flex;
+}
+.navbar ul li a{
+    margin: 30px;
+    text-decoration: none;
+    color: rgb(62, 62, 122);
+    font-weight: bold;
+}
+body.dark .navbar ul li a{
+    color: #eee;
+}
+.navbar .left{
+    width: 70%;
+    font-size: 1.0rem;
+}
+.navbar .right{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 20px;
+    padding: 0 15px;
+    cursor: pointer;
+}
+.navbar .right .label{
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    height: 26px;
+    width: 50px;
+    border-radius: 50px;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+body.dark .navbar .right .label{
+    background-color: blue;
+}
+.fa-moon{
+    color: #f1c40f;
+}
+.fa-sun{
+    color: #f39c12;
+}
+.checkbox{
+    opacity: 0;
+    position: absolute;
+}
+.checkbox:checked+.label .ball{
+    transform: translateX(24px);
+}
+.navbar .right .ball{
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    position: absolute;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+}
+.first{
+    height: 100vh;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.first a{
+    text-decoration: none;
+    color: inherit;
+}
+.first .arrow{
+    position: absolute;
+    bottom: 5px;
+}
+.first::before{
+    content: '';
+    height: 100vh;
+    width: -webkit-fill-available;
+    position: absolute;
+    opacity: 0.9;
+    background: rgba(0, 0, 0, 0.5) url("back.jpg") center no-repeat fixed;
+    background-size: cover;
+    z-index: -1;
+    margin: 20px;
+    border-radius: 20px;
+}
+.first h1{
+    font-size: 4.0rem;
+}
+.first h3{
+    padding-bottom: 20px;
+    color: yellow;
+}
+.first p{
+    font-size: 3.0rem;
+}
+.github{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.github:hover{
+    background-color: #eee;
+    color: #1d1d1d;
+}
+.github p{
+    font-size: 1.5rem;
+    margin: 10px;
+}
+.second{
+    text-align: center;
+}
+.second h2{
+    padding: 20px;
+}
+.second .skill{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+}
+.second .skill i{
+    margin: 1rem;
+    color: rgb(73, 30, 30);
+}
+body.dark .skill i{
+    color: rgb(255, 255, 0);
+}
+#repos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+repo{
+    background-color: #20ff81;
+    border-radius: 30px;
+    margin: 1rem;
+    width: 200px;
+    height: 250px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+repo h2{
+    font-size:1.0rem ;
+    text-align: center;
+}
+repo p{
+    font-size: 0.8rem;
+    text-align: center;
+    word-wrap: break-word;
+    padding: 15px;
+    max-width: 300px;
+}
+repo a{
+    padding: 20px;
+    color: #000;
+    font-size: 0.8rem;
+    display: block;
+    text-align: right;
+}
+body.dark repo{
+    background-color: blue;
+}
+body.dark repo a{
+    color: white;
+}
+
+.contact
+{
+    height: fit-content;
+    width: 100%;
+}
+.form
+{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    padding: 30px;
+    
+}
+.form input{
+    padding: 1.0rem 1.5rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 15px 0px;
+    font-family: inherit;
+    background-color: transparent;
+}
+body.dark .form input{
+    border: 1px solid #eee;
+    color: white;
+}
+.form input:focus{
+   outline: none;
+}
+.form button{
+    padding: 0.5rem 1.0rem;
+    border-radius: 5px;
+    color: white;
+    border: 1px solid black;
+    background-color: blue;
+    font-family: inherit;
+    font-size: 1.0rem;
+}
+.form button:focus{
+    outline: none;
+    cursor: pointer;
+}
+.form button:active{
+    transform: scale(0.9);
+}
+.footer{
+    height: 200px;
+}
+.footer .icons
+{
+    padding: 20px;
+    width: 300px;
+    display: flex;
+}
+.footer .icons a{
+    margin: auto;
+    text-decoration: none;
+    color: inherit;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+.footer .icons a:hover{
+
+    opacity: 1;
+}
+.aboutme{
+    height: fit-content;
+}
+.aboutme .text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+}
+.aboutme .text .image{
+    height: 150px;
+    width: 150px;
+    
+}
+.aboutme .text .image img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.aboutme .background{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    width: 100%;
+}
+.aboutme .background h2{
+    padding: 1.5rem
+}
+.aboutme .background .qualification{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.aboutme .background .qualification .edu{
+    width: 300px;
+    margin: auto;
+}
+.aboutme .background .qualification .edu p{
+    font-weight: bold;
+}
+.aboutme .background .edu h2{
+    text-align: center;
+}
+.aboutme .work{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.aboutme .work .image{
+    width: 150px;
+    padding: 20px;
+}
+.aboutme .work .image img{
+    width: 100%;
+    filter: grayscale(100%);
+}
+body.dark .aboutme .work .image img{
+    width: 100%;
+    filter: invert(100%);
+}
+.aboutme i{
+    font-size: 00.8rem;
+}
+.aboutme .background div{
+    margin: auto 0;
+}
+.aboutme .background i{
+    color: #2b2d2f;
+}
+body.dark .aboutme .background i{
+    color: #eee;
+}
+.burger{
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+    display: none;
+}
+.line{
+    width: 33px;
+    background-color: #1d1d1d;
+    height: 4px;
+    margin: 5px 3px;
+}
+body.dark .line{
+    background-color: #eee;
+}

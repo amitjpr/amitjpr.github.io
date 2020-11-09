@@ -1,0 +1,76 @@
+.navbar{
+    flex-direction: column;
+    height: 555px;
+    transition: all 0.4s ease-out;
+}
+.navbar ul li{
+    flex-direction: column;
+    text-align: center;
+}
+.navbar .left{
+    width: 100%;
+    font-size: 1.0rem;
+}
+.navbar .right
+{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+.first h1{
+    text-align: center;
+    font-size: 2.5rem;
+}
+.first h3{
+    text-align: center;
+    padding-bottom: 20px;
+    color: yellow;
+}
+.first p{
+    text-align: center;
+    font-size: 2.0rem;
+}
+.first .arrow{
+    display: none;
+}
+.github p{
+    font-size: 1.0rem;
+    margin: 10px;
+}
+.v-class{
+    opacity: 0;
+}
+.hnav{
+    height: 50px;
+}
+.burger{
+    display: block;
+}
+
+.aboutme .text{
+    flex-direction: column;
+}
+.aboutme .text .image{
+    height: 90px;
+    width: 90px;
+    margin: 20PX;
+}
+.aboutme .text p{
+    text-align: center;
+}
+.aboutme .text .image img{
+    width: 100%;
+   
+    border-radius: 50%;
+}
+.aboutme .background .qualification{
+   flex-direction: column;
+}
+.aboutme .background .qualification .edu{
+    width: fit-content;
+    margin: 20px;
+}
+.form{
+    width: fit-content;
+}

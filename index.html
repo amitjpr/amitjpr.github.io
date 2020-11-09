@@ -1,5 +1,168 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Amit Agrawal</title>
+	<script src="https://kit.fontawesome.com/d04b6ccc53.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (max-width: 710px)" href="mobile.css">
+</head>
+
 <body>
-Hello ! I am Amit.
+    <nav class="navbar hnav" id="navbar">
+        <div class="left v-class">
+            <ul>
+                <li>
+                    <a href="#">HOME</a>
+                    <a href="#aboutme">ABOUT</a>
+                    <a href="#ssec">SKILLS</a>
+                    <a href="#pro">PROJECT</a>
+                    <a href="#cont">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+        <div class="right v-class">
+            <input type="checkbox" class="checkbox" id="toggle">
+            <label for="toggle" class="label">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+                <div class="ball"></div>
+            </label>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <section class="first" id="fsec">
+
+        <div class="intro">
+            <h1>Hi,</h1>
+            <p>Amit Agrawal&nbsp;&nbsp;👋</p>
+            <h3>Salesforce Developer & Consultant</h3>
+        </div>
+        <a href="https://github.com/amitjpr/" target="_blank">
+            <div class="github">
+                <i class="fab fa-github fa-3x"></i>
+                <p>Github Profile</p>
+            </div>
+        </a>
+        <a href="#aboutme">
+            <div class="arrow">
+                <i class="fas fa-arrow-circle-down fa-3x"></i>
+            </div>
+        </a>
+    </section>
+
+    <section class="aboutme" id="aboutme">
+        <div class="container">
+            <h2 class="nf">About Me</h2>
+            <div class="text">
+                <div class="image">
+                    <img src="face.jpg" alt="">
+                </div>
+                <p>My name is Amit Kumar Agrawal. I am a Salesforce Developer and Consultant.<br> Salesforce Certified Application & System Architect <br/> Salesforce Enthusiastic |
+                    Fast Learner | Innovator | Optimist </p>
+            </div>
+            <div class="background">
+                <h2>Education</h2>
+                <div class="qualification">
+                    <div class="edu">
+                        <p>University of Rajasthan, Jaipur </p>
+                        <i>B.E. Information Technology and Engineering <br> 2005 - 2009</i>
+                    </div>
+                    <div class="edu">
+                        <p>Shri Maheshwari Sr. Sec. School</p>
+                        <i>State Board of Secondary Education. <br>Senior Secondary. <br>2002 - 2004</i>
+                    </div>
+                    <div class="edu">
+                        <p>Nitin Public School</p>
+                        <i> State Board of Secondary Education. <br>Secondary<br>2001 - 2002</i>
+                    </div>
+                </div>
+            </div>
+            <div class="work">
+                <h2 class="nf">Work</h2>
+                <div class="image">
+                    <img src="ob.png" alt="">
+                </div>
+                <p>Freelancer</p>
+                <i>July 2020 - Present</i>
+            </div>
+        </div>
+    </section>
+
+    <section class="second" id="ssec">
+        <div class="container">
+            <h2 class="nf">Skills</h2>
+            <div class="skill">
+                <marquee>
+                    
+                    <i class="fab fa-java fa-3x"></i>
+					<i class="fab fa-salesforce fa-3x" ></i>
+					<i class="fab fa-python fa-3x"></i>
+                    <i class="fab fa-html5 fa-3x"></i>
+                    <i class="fab fa-css3-alt fa-3x"></i>
+                    <i class="fab fa-bootstrap fa-3x"></i>
+                    <i class="fab fa-js-square fa-3x"></i>
+                    <i class="fab fa-aws fa-3x"></i>
+                    <i class="fab fa-github fa-3x"></i>
+                    
+                </marquee>
+            </div>
+        </div>
+    </section>
+
+    <section class="project" id="pro">
+        <div class="container">
+            <h2 class="nf">Project</h2>
+            <div class="project">
+                <div id="repos"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="cont">
+        <div class="container">
+            <h2 class="nf">Get In Touch</h2>
+            <i class="fas fa-envelope fa-5x"></i>
+            <form class="form" id="form">
+                <label for="email">Email</label>
+                <input type="email" name="" id="email" placeholder="name@example.com" required>
+
+                <label for="name">Name</label>
+                <input type="Name" name="" id="name" placeholder="name" required>
+
+                <label for="phone">Phone</label>
+                <input type="tel" name="" id="phone" placeholder="Phone Number with Country code." required>
+
+                <button id="button">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="container">
+            <div class="icons">
+                <a href="https://www.facebook.com/amit.k.agrawal.146"><i class="fab fa-facebook fa-2x"></i></a>
+				 <a href="https://www.instagram.com/a.amitjpr/"><i class="fab fa-instagram-square fa-2x"></i></a>
+                <a href="https://www.linkedin.com/in/sfdcamitkumar"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="https://twitter.com/sfdcamitkumar"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
+            <p>&copy;Amit Agrawal 2020</p>
+        </div>
+    </section>
+
+  
+    <script src="index.js"></script>
 </body>
-<html>
+
+</html>
